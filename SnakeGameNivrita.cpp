@@ -178,7 +178,7 @@ int main()
 
 
 
-    if(snakeX[0] >= 615 || snakeX[0] <=5 || snakeY[0] <= 5|| snakeY[0] >= 455 || snakeX[0]==50 || snakeY[0]==220||snakeY[0]==40||snakeX[0]==60){
+    if(snakeX[0] >= 615 || snakeX[0] <=5 || snakeY[0] <= 5|| snakeY[0] >= 455 || (snakeX[0]==40 && snakeY[0]<=220 && snakeY[0]>=60)){
         std::cout<<"Snake bumped into the wall !!\n\n";
         game = false;
     }
